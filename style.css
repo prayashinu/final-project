@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+body {
+    background-color: #fff;
+    color: #222;
+}
+
+header {
+    background-color: #c78c06;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.button{
+    border: none;
+    height: 30px;
+    margin-top: 8px;
+    padding: 7px 5px;
+    background-color:#ffe6ac;
+    color: #c78c06;
+    cursor: pointer;
+    outline:none;
+    width:auto;
+
+}
+
+.logo {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap if necessary */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Distribute space between items */
+    gap: 10px; /* Space between nav links and other elements */
+}
+
+nav a {
+    padding: 10px;
+    color: #222;
+    text-decoration: none;
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+nav input[type="text"] {
+    padding: 8px;
+    border: 1px solid #c78c06;
+    border-radius: 4px;
+    flex-grow: 1; /* Allows input to grow if there's extra space */
+    min-width: 100px; /* Minimum width to keep the layout intact */
+}
+
+nav .button {
+    padding: 8px 12px;
+    background-color: #c78c06;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+
+.video img {
+    width: 100%;
+    height: auto;
+}
+
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+@media (min-width: 760px) {
+    nav {
+        justify-content: space-between; /* Even spacing between elements */
+    }
+
+    nav a {
+        padding: 10px 15px; /* Slightly increase padding */
+    }
+
+    nav input[type="text"] {
+        flex-grow: 2; /* Allow more room for the search input */
+        min-width: 200px; /* Larger minimum width on bigger screens */
+    }
+
+    nav .button {
+        padding: 10px 15px; /* Increase button padding */
+    }
+}
+
+@media (min-width: 1200px) {
+    nav {
+        gap: 20px; /* Increase gap between elements on larger screens */
+    }
+
+    nav input[type="text"] {
+        min-width: 300px; /* Larger search box on wide screens */
+    }
+
+    nav .button {
+        padding: 10px 20px; /* Even more padding on large screens */
+    }
+}
